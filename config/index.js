@@ -11,14 +11,14 @@ const credentials = {
     auth: {
         tokenHost: apiUri,
         authorizePath: '/AUTH/authorize',
-        tokenPath: '/AUTH/token' // ??
+        tokenPath: '/AUTH/token'
     }
 };
 
 const redirectConfig = {
     host: redirectHost,
     uri: "https://" + redirectHost + "/",
-    startUri : "https://" + redirectHost + "/start/"
+    startUri: "https://" + redirectHost + "/start/"
 };
 
 module.exports = {
