@@ -19,6 +19,7 @@
 .idea
 node_modules
 build
+data/*.json
 
 # Project specific
 *.js.map
