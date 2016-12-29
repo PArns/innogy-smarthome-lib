@@ -1,14 +1,10 @@
-const config = require("./config");
-const oAuth2 = require("./lib/oauth2")(config);
+const SmartHome = require("./lib/smarthome");
 
-oAuth2.getAuthorizationStatus(function (error, status) {
-    if (status.needsAuthorization || !status.token) {
-        var auth = oAuth2.startAuthorization(3000, function (err, token) {
-            console.log(err, token);
-        });
+const smartHome = new SmartHome();
 
-        console.log("PLEASE GO TO THE FOLLOWING URL TO START AUTH: " + auth.startUri);
-    } else {
-        console.log(status);
-    }
+smartHome.on("needsAuthorization", function (auth) {
+    console.log(auth);
 });
+
+smartHome.initialize();
+//smartHome.capability();

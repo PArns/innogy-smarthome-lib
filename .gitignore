@@ -19,7 +19,8 @@
 .idea
 node_modules
 build
-data/*.json
+data/auth/*.json
+data/descriptor/*.json
 
 # Project specific
 *.js.map
