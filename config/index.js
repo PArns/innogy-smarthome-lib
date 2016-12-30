@@ -1,9 +1,11 @@
 // Set the configuration settings
-const apiUri = 'https://api.services-smarthome.de';
+const apiHost = 'api.services-smarthome.de';
+const apiUri = 'https://'+ apiHost;
 const redirectHost = 'iobroker-connect.patrick-arns.de';
 
 const baseConfig = {
     apiUri: apiUri,
+    apiHost: apiHost,
     versionPrefix: "/API/1.0/"
 };
 
