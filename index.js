@@ -7,7 +7,7 @@ smartHome.on("needsAuthorization", function (auth) {
 });
 
 smartHome.on("stateChanged", function (objectWhichStateHasChanged) {
-    console.log(objectWhichStateHasChanged);
+    console.log("stateChanged");
 });
 
 smartHome.on("initializationComplete", function () {
