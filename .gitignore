@@ -3,7 +3,7 @@
 *.err
 *.orig
 *.log
-index.js
+/index.js
 
 # OS or Editor folders
 .DS_Store

@@ -123,8 +123,6 @@ Any contributions are welcome. However, before filing a pull request (PR) an iss
 * If on-going: the current process
 * Where the improvement is helping or how the bug can be reproduced
 
-The PR needs to contain unit tests to cover the code changes. PRs to the `master` branch cannot be accepted, so please make sure to target the `devel` branch.
-
 More information about our contribution guidelines can be found in the [CONTRIBUTING file](CONTRIBUTING.md).
 
 ## License
