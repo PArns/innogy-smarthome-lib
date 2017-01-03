@@ -6,19 +6,113 @@ The library abstracts the RESTful Innogy SmartHome Client API in a platform inde
 
 ## Using the Library
 
-(tbd)
+```JavaScript
 
-### With Node.js
+const SmartHome = require("./lib/smarthome");
 
-(tbd)
+const config = {
+    redirectHost: 'www.example.com',    // define your redirect host here (set by innogy, without http/https)
+    id: '1234567890',                   // oAuth2 ID (to be requested from innogy)
+    secret: 'SECRET'                    // oAuth2 secret (to be requested from innogy)
+};
 
-### With a Browser
+const smartHome = new SmartHome(config);
 
-(tbd)
+smartHome.on("needsAuthorization", function (auth) {
+    console.log(auth);
+});
 
-### Code Examples
+smartHome.on("stateChanged", function (aCapability) {
+    console.log("stateChanged");
 
-(tbd)
+    console.log("    ID:", aCapability.id);
+    console.log("    Type:", aCapability.type);
+
+    if (aCapability.Config.length) {
+        console.log("    - CONFIG:");
+
+        aCapability.Config.forEach(function (aState) {
+            console.log("        Name:", aState.name);
+            console.log("        Type:", aState.type);
+            console.log("        Access:", aState.access);
+            console.log("        Value:", aState.value);
+            console.log("        LastChanged:", aState.lastchanged);
+            console.log("");
+        });
+    }
+
+    if (aCapability.State.length) {
+        console.log("    - STATES:");
+
+        aCapability.State.forEach(function (aState) {
+            console.log("        Name:", aState.name);
+            console.log("        Type:", aState.type);
+            console.log("        Access:", aState.access);
+            console.log("        Value:", aState.value);
+            console.log("        LastChanged:", aState.lastchanged);
+            console.log("");
+        });
+    }
+});
+
+smartHome.on("initializationComplete", function () {
+    console.log("INITIALIZATION SEQUENCE COMPLETED");
+
+    if (smartHome.device && smartHome.device.length) {
+        console.log("LIST OF ALL REGISTERED DEVICES:");
+
+        smartHome.device.forEach(function (aDevice) {
+            console.log("----------------------------------------");
+
+            console.log("ID:", aDevice.id);
+            console.log("Type:", aDevice.type);
+            console.log("Name:", aDevice.getName()); // Helper needed, as name is stored within configuration!
+
+            if (aDevice.Location)
+                console.log("Location:", aDevice.Location.getName()); // Helper needed, as name is stored within configuration!
+
+            console.log("- CAPABILITIES:");
+
+            aDevice.Capabilities.forEach(function (aCapability) {
+                console.log("    ID:", aCapability.id);
+                console.log("    Type:", aCapability.type);
+
+                if (aCapability.Config.length) {
+                    console.log("    - CONFIG:");
+
+                    aCapability.Config.forEach(function (aState) {
+                        console.log("        Name:", aState.name);
+                        console.log("        Type:", aState.type);
+                        console.log("        Access:", aState.access);
+                        console.log("        Value:", aState.value);
+                        console.log("        LastChanged:", aState.lastchanged);
+                        console.log("");
+                    });
+                }
+
+                if (aCapability.State.length) {
+                    console.log("    - STATES:");
+
+                    aCapability.State.forEach(function (aState) {
+                        console.log("        Name:", aState.name);
+                        console.log("        Type:", aState.type);
+                        console.log("        Access:", aState.access);
+                        console.log("        Value:", aState.value);
+                        console.log("        LastChanged:", aState.lastchanged);
+                        console.log("");
+
+                    });
+                }
+
+                console.log("");
+            });
+        });
+    }
+});
+
+smartHome.init();
+
+```
 
 ## Contributing
 

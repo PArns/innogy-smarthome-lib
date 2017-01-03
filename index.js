@@ -12,8 +12,37 @@ smartHome.on("needsAuthorization", function (auth) {
     console.log(auth);
 });
 
-smartHome.on("stateChanged", function (objectWhichStateHasChanged) {
+smartHome.on("stateChanged", function (aCapability) {
     console.log("stateChanged");
+
+    console.log("    ID:", aCapability.id);
+    console.log("    Type:", aCapability.type);
+
+    if (aCapability.Config.length) {
+        console.log("    - CONFIG:");
+
+        aCapability.Config.forEach(function (aState) {
+            console.log("        Name:", aState.name);
+            console.log("        Type:", aState.type);
+            console.log("        Access:", aState.access);
+            console.log("        Value:", aState.value);
+            console.log("        LastChanged:", aState.lastchanged);
+            console.log("");
+        });
+    }
+
+    if (aCapability.State.length) {
+        console.log("    - STATES:");
+
+        aCapability.State.forEach(function (aState) {
+            console.log("        Name:", aState.name);
+            console.log("        Type:", aState.type);
+            console.log("        Access:", aState.access);
+            console.log("        Value:", aState.value);
+            console.log("        LastChanged:", aState.lastchanged);
+            console.log("");
+        });
+    }
 });
 
 smartHome.on("initializationComplete", function () {
@@ -47,7 +76,7 @@ smartHome.on("initializationComplete", function () {
                         console.log("        Access:", aState.access);
                         console.log("        Value:", aState.value);
                         console.log("        LastChanged:", aState.lastchanged);
-
+                        console.log("");
                     });
                 }
 
@@ -60,9 +89,12 @@ smartHome.on("initializationComplete", function () {
                         console.log("        Access:", aState.access);
                         console.log("        Value:", aState.value);
                         console.log("        LastChanged:", aState.lastchanged);
+                        console.log("");
 
                     });
                 }
+
+                console.log("");
             });
         });
     }
