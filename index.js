@@ -1,6 +1,12 @@
 const SmartHome = require("./lib/smarthome");
 
-const smartHome = new SmartHome();
+const config = {
+    redirectHost: 'iobroker-connect.patrick-arns.de',
+    id: '61768662',
+    secret: 'no secret'
+};
+
+const smartHome = new SmartHome(config);
 
 smartHome.on("needsAuthorization", function (auth) {
     console.log(auth);
