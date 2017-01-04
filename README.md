@@ -110,6 +110,7 @@ smartHome.on("initializationComplete", function () {
     }
 });
 
+console.log("Auth start uri (if auth missing)", smartHome.getAuthorizationUri());
 smartHome.init();
 
 ```
