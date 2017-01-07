@@ -108,6 +108,17 @@ smartHome.on("initializationComplete", function () {
             });
         });
     }
+
+    // Get capapbility by ID
+    var cap = smartHome.getCapabilityById("CAPABILITY ID");
+
+    // setState accepts as first parameter the value you want to set
+    // will be parsed automatically, so "true", true, 1 for a boolean value is allowed
+    // the second parameter is the state you want to set (optional, if missing the first state is used)
+    cap.setState(true, "OnState");
+
+    // Close connection once everything is done
+    smartHome.finalize();
 });
 
 console.log("Auth start uri (if auth missing)", smartHome.getAuthorizationUri());
