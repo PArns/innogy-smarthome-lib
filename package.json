@@ -1,6 +1,6 @@
 {
   "name": "innogy-smarthome-lib",
-  "version": "0.2.22",
+  "version": "0.3.0",
   "description": "JavaScript library for the Innogy SmartHome system",
   "main": "./lib/smarthome",
   "scripts": {
@@ -27,7 +27,6 @@
     "jsonfile": "^2.4.0",
     "md5": "^2.2.1",
     "request-promise": "^4.2.1",
-    "simple-oauth2": "^1.2.0",
     "ws": "^2.3.1",
     "xml2js": "^0.4.17"
   }
