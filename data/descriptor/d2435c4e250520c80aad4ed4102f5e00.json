@@ -1,0 +1,1 @@
+{"Location":{"$":{"id":""},"Config":[{"Property":[{"$":{"name":"Name","default":"","type":"/types/string","access":"RW"}},{"$":{"name":"Type","default":"","type":"/types/LocationTypes","access":"RW"}}]}],"Tags":[""]}}
