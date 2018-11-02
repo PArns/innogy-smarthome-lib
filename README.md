@@ -22,6 +22,10 @@ smartHome.on("needsAuthorization", function (auth) {
     console.log(auth);
 });
 
+smartHome.on("needsMobileAccess", function () {
+    console.log("YOU NEED TO BUY MOBILE ACCESS!");
+});
+
 smartHome.on("stateChanged", function (aCapability) {
     console.log("stateChanged");
 
