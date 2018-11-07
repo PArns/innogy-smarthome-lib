@@ -4,6 +4,10 @@ The JavaScript library for using the Innogy SmartHome system.
 
 The library abstracts the RESTful Innogy SmartHome Client API in a platform independent JavaScript library, which is distributed for applications using Node.js or the browser.
 
+## HELP WANTED!
+
+As this project is developed during my spare time, I*m actively looking for help to maintain and extend this lib! If you're willing to help, drop me a line!
+
 ## Using the Library
 
 ```JavaScript

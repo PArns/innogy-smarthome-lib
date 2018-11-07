@@ -1,0 +1,1 @@
+{"Capability":{"$":{"type":"device/PresenceDevice.innogy/1.0/capability/Geofence","class":"Geofence"},"Location":[{"Link":[{"$":{"value":"/desc/Location"}}]}],"Device":[{"Link":[{"$":{"value":"/desc/device/PresenceDevice.innogy/1.0"}}]}],"Config":[{"Property":[{"$":{"name":"Name","default":"My Phone","type":"/types/DisplayName","access":"RW"}}]}]}}
