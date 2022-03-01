@@ -1,4 +1,4 @@
-# Numerous always-ignore extensions
+npm insta# Numerous always-ignore extensions
 *.diff
 *.err
 *.orig
@@ -27,3 +27,4 @@ data/auth/*.json
 *.map
 src/*.js
 src/*.js.map
+package-lock.json

@@ -17,7 +17,13 @@ const SmartHome = require("./lib/smarthome");
 const config = {
     redirectHost: 'www.example.com',    // define your redirect host here (set by innogy, without http/https)
     id: '1234567890',                   // oAuth2 ID (to be requested from innogy)
-    secret: 'SECRET'                    // oAuth2 secret (to be requested from innogy)
+    secret: 'SECRET',                   // oAuth2 secret (to be requested from innogy)
+
+    // Local SHC connection (requires currently SHC 2 and Software Version > 8.17)
+    // This SHC version is currently in BETA
+    localShc: "192.168.100.100",        // Local SHC IPs
+    localPassword: "PASSWORD",          // Local SHC Password
+    localConnection: false,              // Set to true, if you want to use a local connection instead of a cloud one
 };
 
 const smartHome = new SmartHome(config);
