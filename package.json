@@ -1,6 +1,6 @@
 {
   "name": "innogy-smarthome-lib",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "JavaScript library for the Innogy SmartHome system",
   "main": "./lib/smarthome",
   "scripts": {
@@ -15,21 +15,21 @@
     "RWE",
     "smarthome"
   ],
-  "author": "Patrick Arns <npm@patrick-arns.de> (http://www.patrick-arns.de)",
+  "author": "Patrick Arns <npm@patrick-arns.de> (https://www.patrick-arns.de)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PArns/innogy-smarthome-lib/issues"
   },
   "homepage": "https://github.com/PArns/innogy-smarthome-lib#readme",
   "dependencies": {
-    "async-lock": "^1.2.4",
+    "async-lock": "^1.3.1",
     "bluebird": "^3.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonfile": "^5.0.0",
-    "md5": "^2.2.1",
+    "md5": "^2.3.0",
     "request": "^2.88.2",
-    "request-promise": "^4.2.5",
-    "ws": "^6.2.1",
+    "request-promise": "^4.2.6",
+    "ws": "^6.2.2",
     "xml2js": "^0.4.23"
   }
 }
