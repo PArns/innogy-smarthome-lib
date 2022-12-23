@@ -1,7 +1,5 @@
 # Changelog
-
-
-## __WORK IN PROGRESS__
+## 0.8.1 (2022-12-23)
 * Fixes for readiong device states
 
 ## 0.8.0 (2022-12-23)
