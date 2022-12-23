@@ -1,6 +1,5 @@
 # Changelog
-
-## __WORK IN PROGRESS__
+## 0.8.2 (2022-12-23)
 * Load Messages and emit them on beginning
 
 ## 0.8.1 (2022-12-23)
