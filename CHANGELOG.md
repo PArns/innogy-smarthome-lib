@@ -1,5 +1,5 @@
 # Changelog
-## __WORK IN PROGRESS__
+## 0.8.5 (2022-12-23)
 * Fix crash case with messages
 
 ## 0.8.4 (2022-12-23)
