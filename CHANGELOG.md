@@ -1,6 +1,5 @@
 # Changelog
-
-## __WORK IN PROGRESS__
+## 0.8.0 (2022-12-23)
 * Add support to read device states
 * Add support to pass through received messages and message deletions
 
