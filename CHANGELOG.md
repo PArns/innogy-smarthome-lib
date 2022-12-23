@@ -1,4 +1,8 @@
 # Changelog
+
+## __WORK IN PROGRESS__
+* Optimize Authorization server handling on startup and prevent issues when starting twice (again)
+
 ## 0.8.3 (2022-12-23)
 * Optimize Authorization server handling on startup and prevent issues when starting twice
 
