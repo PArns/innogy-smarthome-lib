@@ -1,4 +1,8 @@
 # Changelog
+
+## __WORK IN PROGRESS__
+* Optimize Authorization server handling on startup and prevent issues when starting twice
+
 ## 0.8.2 (2022-12-23)
 * Load Messages and emit them on beginning
 
