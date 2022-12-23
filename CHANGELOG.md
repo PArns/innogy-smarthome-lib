@@ -1,5 +1,5 @@
 # Changelog
-## __WORK IN PROGRESS__
+## 0.9.1 (2022-12-23)
 * Allow to configure the port for the redirect back server
 
 ## 0.8.5 (2022-12-23)
