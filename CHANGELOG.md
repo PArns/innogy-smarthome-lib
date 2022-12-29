@@ -1,4 +1,7 @@
 # Changelog
+## __WORK IN PROGRESS__
+* Added option to specify the authorization token directory in settings
+
 ## 0.9.1 (2022-12-23)
 * Allow to configure the port for the redirect back server
 
