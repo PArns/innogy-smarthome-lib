@@ -1,6 +1,5 @@
 # Changelog
-
-## __WORK IN PROGRESS__
+## 0.10.1 (2022-12-31)
 * Optimize Authentication server handling
 
 ## 0.10.0 (2022-12-29)
