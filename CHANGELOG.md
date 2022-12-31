@@ -1,4 +1,8 @@
 # Changelog
+
+### __WORK IN PROGRESS__
+* Optimize Authentication server handling
+
 ## 0.10.0 (2022-12-29)
 * Added option to specify the authorization token directory in settings
 
