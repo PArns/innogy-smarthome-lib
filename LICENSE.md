@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2017-2022 Patick Arns and collaborators
+Copyright (c) 2017-2023 Patick Arns and collaborators
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
