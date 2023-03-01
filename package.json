@@ -30,7 +30,7 @@
     "md5": "^2.3.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "ws": "^8.11.0",
+    "ws": "^8.12.1",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
